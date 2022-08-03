@@ -1,0 +1,107 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisilipe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&family=Open+Sans:wght@300;500&family=Roboto+Serif:opsz,wght@8..144,200&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="../assets/img/logo_desenho.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+</head>
+
+<body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="Close menu"></label>
+    <aside class="menu white-bg">
+        <section class="main-content menu-content">
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <img class="imagem-menu" src="../assets/img/logo_desenho_preta_com_nome.svg">
+                    <li><a href="../index.html">Notícias</a>
+                    </li>
+                    <li><a href="../pag-contato/index-contato.html">Contato</a></li>
+                    <li><a href="../pag-sobre/index-sobre.html">Sobre</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </aside>
+
+    <section id="Contato" class="main-bg-contato">
+        <div class="main-content">
+            <form class="form-text">
+                <legend>
+                    Entre em contato com a gente!
+                </legend>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 form-grupo format-fundo">
+                        <label for="Priemiro nome">
+                            Primeiro Nome
+                        </label>
+                        <input type="text" name="Pirmeiro nome" id="primeiro-nome" , placeholder="Primeiro nome">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 form-grupo format-fundo">
+                        <label for="Sobrenome">
+                            Sobrenome
+                        </label>
+                        <input type="text" name="Sobrenome" id="sobrenome" , placeholder="Sobrenome">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 form-grupo format-fundo">
+                        <label for="email">
+                            E-mail
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 form-grupo format-fundo">
+                        <label for="mensagem">
+                            Mensagem
+                        </label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"
+                            placeholder="Sua mensagem"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-grupo">
+                    <button type="submit">Enviar</button>
+                </div>
+
+
+            </form>
+        </div>
+        <div id="mensagemEnviada"></div>
+    </section>
+    
+   
+    <footer id="footer" class="white-bg">
+        <p><a id='mensagem-footer' rel="nofollow" target="_blank">Indo sempre além</a></p>
+    </footer>
+
+    <a class="voltar-top" href="#">^</a>
+    
+    <script src="./js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
