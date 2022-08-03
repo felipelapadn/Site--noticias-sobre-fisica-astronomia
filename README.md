@@ -1,4 +1,4 @@
-# Site--noticias-sobre-fisica-astronomia
+# Site: notÍcias sobre Física e Astronomia
 
 O site aqui apresentado foi feito como uma proposta de projeto final para a disciplina de Linguagem de Estruturação e Apresentação de Conteúdos. A ideia do site é divulgar notícias do campo da física e da astronomia, mas não foi aplicado nenhuma colota de API ou links trabalhando dentro do site, já que a proposta da disciplina era trabalhar com o HTML, CSS e JavaScript.
 
