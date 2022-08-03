@@ -1,0 +1,389 @@
+:root {
+    --primary-color: #02020D;
+    --white-color: white;
+    --azul-claro: #488088;
+    --secundary-color: #011C40;
+    --gab: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+font-family: 'Encode Sans SC', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Serif', serif;
+*/
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+h1 {
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 6rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 3.5rem;
+}
+
+h6 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 3rem;
+}
+
+.black-bg {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.main-bg-contato {
+    background-image: url('../img/Design\ sem\ nome.png');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.bg-not-destaque {
+    background-image: url('../img/satelite.png');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.bg-not-sec {
+    background-image: url('../img/mancha_solar.png');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 8rem var(--gab);
+}
+
+.section {
+    height: 63rem;
+}
+
+.menu {
+    background: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid var(--azul-claro);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0.5rem;
+    left: 10%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--primary-color);
+    transition: all 150ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 80%;
+}
+
+.white-bg {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.imagem-menu {
+    display: inline-block;
+    width: 17%;
+    margin-left: 5rem;
+}
+
+.sobre-content {
+    gap: var(--gab);
+    min-height: 100vh;
+}
+
+.sobre-content h3 {
+    font-size: 5.2rem;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.sobre-content p {
+    font-size: 1.5rem;
+}
+
+.intro-img img,
+.intro-img svg {
+    max-width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.nt-content {
+    max-width: 95rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.nt-content h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nt-content p {
+    font-size: 18px;
+}
+
+.form-text legend {
+    display: inline-block;
+    position: inherit;
+    font-family: 'Encode Sans SC';
+    font-size: 3rem;
+    padding-top: 2rem;
+    margin-bottom: 2.8rem;
+}
+
+.format-fundo {
+    display: inline-block;
+    position: inherit;
+}
+
+.form-grupo {
+    padding: 2rem;
+}
+
+.form-grupo label {
+    margin-bottom: 0.7rem;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    display: inline-block;
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 1.7rem;
+}
+
+.form-grupo button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+.form-grupo button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-grupo ::placeholder {
+    z-index: -1;
+    color: var(--secundary-color);
+    opacity: 50%;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    box-shadow: 0 0 1rem var(--secundary-color);
+}
+
+#footer {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#footer a {
+    color: var(--primary-color);
+}
+
+#footer p {
+    margin: 0;
+    padding: 3rem;
+}
+
+.voltar-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+
+.close-menu {
+    display: none;
+}
+
+.button-easter {
+    width: 8rem;
+    height: 8rem;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.button-easter:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.mensagem-form {
+    background-color: var(--white-color);
+    padding: 8rem var(--gab);
+    color: var(--primary-color);
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+
+    .imagem-menu {
+        width: 100%;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content,
+    .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content{
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        background: var(--white-color);
+        color: var(--primary-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 100%;
+        padding: var(--gab);
+        text-align: right;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: 'x';
+    }
+
+    .menu ul li a::after {
+        content: '';
+        position: absolute;
+        bottom: 0.5rem;
+        left: 40%;
+        width: 0;
+        height: 0.2rem;
+        background: var(--primary-color);
+        transition: all 150ms ease-in-out;
+    }
+    
+    .menu ul li a:hover::after {
+        width: 20%;
+    }
+
+    .intro-img {
+        max-width: 100%;
+        height: 100%;
+    }
+}
